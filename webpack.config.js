@@ -47,6 +47,28 @@ module.exports = function () {
         new webpack.LoaderOptionsPlugin({
             minimize: false,
             debug: true
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
+            compress: {
+                warnings: false,
+                screw_ie8: true,
+                conditionals: true,
+                unused: true,
+                comparisons: true,
+                sequences: true,
+                dead_code: true,
+                evaluate: true,
+                if_return: true,
+                join_vars: true,
+                drop_debugger: true,
+                booleans: true,
+                loops: true,
+                drop_console: true
+            },
+            output: {
+                comments: false
+            }
         })
       ],
 
