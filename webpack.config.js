@@ -7,8 +7,7 @@ module.exports = function () {
   return {
       context: path.join(__dirname),
       entry: {
-          plugin: './lib/plugin/index.js',
-          main: './lib/main.jsx'
+          plugin: './lib/plugin/index.js'
       },
       devtool: 'cheap-source-map',
       output: {
@@ -64,11 +63,7 @@ module.exports = function () {
                         loader: 'babel-loader'
                     }
                 ]
-            },
-            {
-                test: /\.worker\.(js|jsx)$/,
-                loader: 'worker-loader'
-            },
+            }
         ]
       },
 
