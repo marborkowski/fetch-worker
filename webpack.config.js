@@ -9,10 +9,11 @@ module.exports = function () {
       entry: {
           plugin: './lib/plugin/index.js'
       },
-      devtool: 'cheap-source-map',
+      devtool: 'source-map',
       output: {
         path: path.join(__dirname),
         filename: './dist/[name].js',
+        sourceMapFilename: '[file].map',
         libraryTarget: 'umd',
         library: 'FetchWorker'
       },
