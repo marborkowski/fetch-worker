@@ -7,6 +7,13 @@
     "build": "cross-env NODE_ENV=production webpack -d --config webpack.config.js --env.prod=true"
   },
   "author": "Marcin Borkowski <marborkowski@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marborkowski/react-fetch-worker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marborkowski/react-fetch-worker/issues"
+  },
   "license": "MIT",
   "keywords": [
     "javascript",

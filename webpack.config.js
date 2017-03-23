@@ -14,7 +14,7 @@ module.exports = function () {
         path: path.join(__dirname),
         filename: './dist/[name].js',
         libraryTarget: 'umd',
-        library: 'ReactPlugin'
+        library: 'FetchWorker'
       },
 
       externals: [
