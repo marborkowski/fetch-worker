@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "transform-class-properties"
+  ],
+  "presets": [
+    ["es2015", { "modules": false }],
+    "es2016",
+    "react"
+  ],
+  "sourceMaps": false,
+  "comments": false
+}
